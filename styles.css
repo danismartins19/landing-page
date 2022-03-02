@@ -112,7 +112,7 @@ body{
 }
 
 .giticon{
-    height: 25px;
+    font-size: 20px;
 }
 
 .conteudo-secundario{
@@ -271,11 +271,47 @@ body{
     margin-bottom: 10px;
 }
 
+.repositorio-botao{
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    color: #312d2d;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    border: 0.4px solid #FFF2E7;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.repositorio-botao:hover{
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+.giticonrepo{
+    font-size: 20px;
+    color: white;
+}
+
+.linkGitRepo:link, .linkGitRepo:visited,  .linkGitRepo:hover, .linkGitRepo:active
+{
+    color: #FFF2E7;
+    text-decoration: none;
+}
+
 .rodape{
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .rodape-paragrafo{
