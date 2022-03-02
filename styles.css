@@ -79,8 +79,8 @@ body{
 
 .conteudo-principal-escrito-botao{
     width: 70%;
-    height: 30px;
-    background-color: #FFF2E7;
+    height: 40px;
+    background-color: transparent;
     color: #312d2d;
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
@@ -91,20 +91,20 @@ body{
     justify-content: center;
     margin-top: 20px;
     gap: 10px;
-    border: none;
+    border: 0.4px solid #FFF2E7;
     border-radius: 3px;
     transition: 0.5s;
 }
 
 .linkGit:link, .linkGit:visited,  .linkGit:hover, .linkGit:active
 {
-    color: #312d2d;
+    color: #FFF2E7;
     text-decoration: none;
 }
 
 .conteudo-principal-escrito-botao:hover{
     cursor: pointer;
-    background-color:#cec6bf;
+    background-color:#dfdbd93f;
 }
 
 .conteudo-principal-imagem{
@@ -291,8 +291,8 @@ body{
 }
 
 .repositorio-botao:hover{
-    filter: brightness(1.5);
     cursor: pointer;
+    background-color:#dfdbd93f;
 }
 
 .giticonrepo{
