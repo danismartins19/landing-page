@@ -246,6 +246,16 @@ body{
     text-align: end;
 }
 
+.projeto-banner-link{
+    color: #FFF2E7;
+    display: flex;
+    border-bottom: 0.4px solid #FFF2E7;
+    padding-bottom: 3px;
+    gap: 8px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 14px;
+}
+
 .projeto-banner-foto{
     object-fit: contain;
     height: 250px;
