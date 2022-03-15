@@ -309,11 +309,13 @@ body{
     border: 0.4px solid #FFF2E7;
     border-radius: 3px;
     transition: 0.5s;
+    margin-bottom: 80px;
 }
 
 .repositorio-botao:hover{
     cursor: pointer;
     background-color:#dfdbd93f;
+    
 }
 
 .giticonrepo{
@@ -331,10 +333,11 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 
 .social-titulo{
-    margin: 80px 0 50px 0;
+    margin: 0 0 50px 0;
     padding-top: 35px;
     border-top: 0.4px solid #FFF2E7;
 
@@ -364,7 +367,7 @@ body{
     margin: 60px 15% 0;
 }
 
-.fb, .insta, .tw{
+.rs{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,8 +384,13 @@ body{
     color: #8b847e;
 }
 
-.bi-instagram, .bi-twitter, .bi-facebook{
+.bi-instagram, .bi-twitter, .bi-facebook, .bi-telephone-fill, .bi-whatsapp, .bi-envelope-fill{
     font-size: 36px;
+    transition: 0.3s;
+}
+
+.bi-instagram:hover, .bi-twitter:hover, .bi-facebook:hover, .bi-telephone-fill:hover, .bi-whatsapp:hover, .bi-envelope-fill:hover{
+    transform: scale(1.1);
 }
 
 .social-title{
@@ -392,6 +400,48 @@ body{
     font-size: 16px;
     color: #FFF2EF;
 }
+
+.contato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato-titulo{
+    margin: 0 0 50px 0;
+    padding-top: 35px;
+    border-top: 0.4px solid #FFF2E7;
+
+    font-family: 'Righteous', cursive;
+    font-weight: 200;
+    font-size: 24px;
+    color: #FFF2EF;
+}
+
+
+.contato-perfis{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 60px 15% 0;
+}
+
+.contato-title{
+    margin-top: 10px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #FFF2EF;
+    width: 130px;
+    text-align: center;
+}
+
+
+
+
+
 
 .rodape{
     height: 100px;
