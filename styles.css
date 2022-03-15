@@ -418,6 +418,16 @@ body{
     color: #FFF2EF;
 }
 
+.contato-subtitulo{
+    margin: 0 15% 15px;
+    text-align: justify;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #FFF2EF;
+    visibility: hidden;
+}
+
 
 .contato-perfis{
     display: flex;

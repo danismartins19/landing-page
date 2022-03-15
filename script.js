@@ -15,3 +15,5 @@ sr.reveal('.projeto-banner', {duration: 1500});
 sr.reveal('.projeto-banner-inv', {duration: 1500});
 
 sr.reveal('.social-descricao', {duration: 1500});
+
+sr.reveal('.contato-subtitulo', {duration: 1500})
