@@ -467,3 +467,67 @@ body{
     font-size: 18px;
     color: #FFF2EF;
 }
+
+/* responsivo */
+
+@media (max-width: 480px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        font-size: 100%;
+        background: linear-gradient(68.15deg, #25222e 16.62%, #3d3a94 85.61%);
+    }
+    
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        padding: 7%;
+    }
+
+    .conteudo-principal-escrito{
+        margin-bottom: 30px;
+    }
+
+    .conteudo-principal-imagem{
+        height: 250px;
+    }
+
+    .conteudo-secundario-paragrafo{
+        text-align: center;
+    }
+
+    .sobre-titulo{
+        margin-bottom: 40px;
+    }
+
+    .sobre-paragrafo{
+        margin: 0 5% 40px;
+    }
+
+    .projeto-banner, .projeto-banner-inv{
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 5% 20px;
+    }
+
+    .projeto-banner-foto{
+        width: 100%;
+    }
+
+    .projetos .projeto-banner:nth-child(4){
+        margin-bottom: 30px;
+    }
+
+    .repositorio-titulo{
+        text-align: center;
+    }
+
+    .social-descricao{
+        margin: 0 5% 18px;
+    }
+
+    .contato-subtitulo{
+        margin: 0 5% 15px;
+    }
+}
