@@ -66,6 +66,7 @@ body{
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
+    border-bottom: 0.2px solid #FFF2E7;
 }
 
 .conteudo{
