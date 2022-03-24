@@ -38,6 +38,7 @@ body{
     width: 28px;
     border-top: 3px solid #FFF2E7;
     cursor: pointer;
+    
 }
 
 .menu-toggle::before, .menu-toggle::after{
@@ -47,13 +48,11 @@ body{
     width: 28px;
     height: 3px;
     background-color: #FFF2E7;
+    transition: .3s;
+    position: relative;
 }
 
 
-.menu-toggle::after{
-    content: '';
-
-}
 
 
 .cabecalho-menu{
@@ -540,6 +539,19 @@ body{
         display: flex;
         visibility: visible;
         overflow-y: auto;
+    }
+
+    .cabecalho.active .menu-toggle{
+        border-top: transparent;
+    }
+
+    .cabecalho.active .menu-toggle::before{
+        transform: rotate(135deg);
+    }
+
+    .cabecalho.active .menu-toggle::after{
+        transform: rotate(-135deg);
+        top: -7px;
     }
 
     .cabecalho-menuitem{
