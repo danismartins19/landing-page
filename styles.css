@@ -149,7 +149,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    margin-top: 48px;
+    margin-top: 14px;
     visibility: hidden;
 }
 
@@ -296,7 +296,7 @@ body{
     object-fit: contain;
     height: 250px;
     width: 50%;
-    border-radius: 8%;
+    border-radius: 10px;
 }
 
 .projetos .projeto-banner:nth-child(4){
@@ -474,16 +474,13 @@ body{
 }
 
 
-
-
-
-
 .rodape{
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    border-top: 0.4px solid #FFF2EF;
 }
 
 .rodape-paragrafo{
@@ -495,7 +492,7 @@ body{
 
 /* responsivo */
 
-@media (max-width: 480px){
+@media (max-width: 600px){
 
     body{
         display: flex;
@@ -516,8 +513,37 @@ body{
 
     .cabecalho-menu{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 125px;
+        right: 0;
+        width: 100%;
+        height: 0;
+        background-color: #3d3a94;
+        padding: 20px;
+        z-index: 1000;
+        transition: 2s;
+        visibility: hidden;
+        overflow-y: hidden;
     }
-    
+
+    /*  MENU MOBILE   */
+
+    .cabecalho.active .cabecalho-menu{
+        height: calc(100vh - 70px);
+        display: flex;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .cabecalho-menuitem{
+        border-bottom: 0.4px solid #FFFF;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* FIM MENU MOBILE */
+
     .conteudo-principal{
         display: flex;
         flex-direction: column;
@@ -530,6 +556,7 @@ body{
 
     .conteudo-principal-imagem{
         height: 250px;
+        width: 95%;
     }
 
     .conteudo-secundario-paragrafo{
@@ -568,5 +595,133 @@ body{
 
     .contato-subtitulo{
         margin: 0 5% 15px;
+    }
+}
+
+
+@media (max-width: 750px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        font-size: 100%;
+        background: linear-gradient(68.15deg, #25222e 16.62%, #3d3a94 85.61%);
+    }
+
+    .cabecalho{
+        justify-content: space-between;
+        padding: 20px 6%;
+    }
+
+    .menu-toggle{
+        display: block;
+        position: relative;
+    }
+
+    .cabecalho-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 125px;
+        right: 0;
+        width: 100%;
+        height: 0;
+        background-color: #3d3a94;
+        padding: 20px;
+        z-index: 1000;
+        transition: 2s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    /*  MENU MOBILE   */
+
+    .cabecalho.active .cabecalho-menu{
+        height: calc(100vh - 70px);
+        display: flex;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .cabecalho-menuitem{
+        border-bottom: 0.4px solid #FFFF;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* FIM MENU MOBILE */
+
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        padding: 7%;
+    }
+
+    .conteudo-principal-escrito{
+        margin-bottom: 30px;
+    }
+
+    .conteudo-principal-imagem{
+        height: 250px;
+    }
+
+    .conteudo-secundario-paragrafo{
+        text-align: center;
+    }
+
+    .sobre-titulo{
+        margin-bottom: 40px;
+    }
+
+    .sobre-paragrafo{
+        margin: 0 5% 40px;
+    }
+
+    .projeto-banner, .projeto-banner-inv{
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 5% 20px;
+    }
+
+    .projeto-banner-side, .projeto-banner-side-inv{
+        margin-bottom: 50px;
+    }
+
+    .projeto-banner-foto{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .projetos .projeto-banner:nth-child(4){
+        margin-bottom: 30px;
+    }
+
+    .repositorio-titulo{
+        text-align: center;
+    }
+
+    .social-descricao{
+        margin: 0 5% 18px;
+    }
+
+    .contato-subtitulo{
+        margin: 0 5% 15px;
+    }
+}
+
+@media (max-width: 1200px){
+    .projeto-banner, .projeto-banner-inv{
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 5% 20px;
+    }
+
+    .projeto-banner-side, .projeto-banner-side-inv{
+        margin-bottom: 50px;
+    }
+
+    .projeto-banner-foto{
+        width: 100%;
+        margin-bottom: 50px;
     }
 }
